@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <title>Virtual Spectacles</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{{ page.title }}</title>
+    <link rel="icon" href="{{ site.baseurl }}/img/logo.png">
+
     <link rel="stylesheet" href="{{ site.baseurl }}{% link assets/css/app.scss %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 </head>
-<body>  
+<body>
 {% include nav.html %}
-
-
+{{ content }}
 {% include footer.html %}
 {% include scripts-bottom.html %}
 </body>

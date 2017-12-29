@@ -1,0 +1,27 @@
+.navigatie{
+background-color: $blauw;
+color: white;
+}
+
+.titel{
+    color: white;
+    font-family: 'Ultra', serif;
+    
+    &:hover{
+        color: white;
+    }
+}
+
+.hamburger{
+    color: white;
+    border: 1px solid white !important;
+}
+
+.icoon{
+        color: white;
+
+}
+
+.nav-item{
+    color: white !important;
+}

@@ -1,16 +1,6 @@
 @import
-"bootstrap-variables",                  // See _bootstrap-variables.scss
-"../_vendor/bootstrap/scss/bootstrap";  // See _vendor/bootstrap/scss/bootstrap.scss
-p{
-    color: black;
-    font-size: 15px;
-}
-
-body{
-    background-color: rgba(192, 31, 31, 0.5);
-
-}
-
-h1{
-    font-family: 'Ultra', serif;
-}
+  "bootstrap-variables",                  // See _bootstrap-variables.scss
+  "../_vendor/bootstrap/scss/bootstrap",  // See _vendor/bootstrap/scss/bootstrap.scss
+  "navigatie",
+  "kalender",
+  "custom"; 
