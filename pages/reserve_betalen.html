@@ -6,51 +6,63 @@ permalink: /reserve_betalen.html
 title: Betalen
 ---
 <div class="container">
-    <div class="row">
-        <div class="col-md-6 col-12">
-            <h3>Mijn reservatie</h3>
-        </div>
-        <div class="col-md-6 col-12">
-            <div>
-                <h5>Controleer je gegevens</h5>
+        <div class="row">
+            <div class="col-12 col-md-6 offset-md-5">
+                <h2>Controleer uw gegevens:</h2>
                 <p>
-                        Datum: 15/12/2018 <br>
-                        Voornaam: Jella <br>
-                        Achternaam: Vanbroeck  <br>
-                        Telefoonnummer: 09 364 87 98 <br>
-                        E-mailadres: jella.vanbroeck@gmail.com <br>
-                        Adres: pepperstraat 63 9000 Gent <br>
-                        Opmerkingen: / <br>
+                    Voornaam: Jella<br>
+                    Achternaam: Vanbroeck<br>
+                    Telefoonnummer: 09 364 87 98 <br>
+                    E-mailadres: jella.vanbroeck@gmail.com <br>
+                    Adres:pepperstraat 63 9000 Gent <br>
+                    Soort abonnement: Een 10 beuren kaart <br>
+                    Opmerkingen: /
                 </p>
-                <h5>Kies je betaalmethode:</h5>
-                <div>
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                            Paypal
-                        </label>
+                <a class="link" href="reserveren.html"> Gegevens wijzigen</a>
+            <br><br>
+            <p>
+                    <a class="btn knop" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Bevestigen en betalen</a>
+            </p>
+                  <div class="row">
+                    <div class="col">
+                      <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body">
+    
+                                <div class="col-12">
+                                        <h3>Kies je betaalmethode:</h3>
+                                        <div>
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                                Paypal
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                                Bancontact
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                                Visa
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                                Mastercard
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <a class="btn knop" href="{{ site.baseurl }}/abo_bedank.html" role="button">Betalen</a>
+                        </div>
+                      </div>
                     </div>
-                    <div>
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                            Bancontact
-                        </label>
-                    </div>
-                    <div>
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                            Visa
-                        </label>
-                    </div>
-                    <div>
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                            Mastercard
-                        </label>
-                    </div>
-                    <button class="btn btn-dark">
-                            <a href="reserve_bedank.html">Betalen</a>
-                    </button>
-            </div>
+                  </div>
+        
+            
+        </div>
         </div>
     </div>
-</div>

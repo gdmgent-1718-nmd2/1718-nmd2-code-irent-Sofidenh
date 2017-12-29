@@ -7,43 +7,76 @@ title: Log in
 ---
 <div class="container">
     <div class="row">
-        <div class="col-md-6 col-12">
-            <h3>Inloggen</h3>
-                <label for="inputemail">E-mail</label>
-                <input type="email" class="form-control" id="inputemail" placeholder="E-mail">
-                <label for="inputwachtwoord">Wachtwoord</label>
-                <input type="wachtwoord" class="form-control" id="inputwachtwoord" placeholder="Wachtwoord">
-                <div>
-                    onthoud mij
-                </div>
-                <button class="btn btn-dark">
-                        <a href="reserve_betalen.html">Inloggen</a>
-                </button>
-                <div>
-                        Ik ben mijn wachtwoord vergeten? <br>
-                        Vul hier het e-mailadres in
-                        <input type="email" class="form-control" id="inputemail" placeholder="E-mail">
-                        <button class="btn btn-dark">
-                                <a href="wachtwoord.html">Verstuur</a>
-                        </button>
-                </div>
+        <div class="col-12">
+            <h2>Reserveren</h2>
+            <h3>Log in:</h3>
         </div>
         <div class="col-md-6 col-12">
-            <h5>Nieuw bij Virtual spectacles?</h5>
-            <div>
-                <p>Registreer als nieuwe klant:</p>
-                <label for="inputemail">E-mail</label>
-                <input type="email" class="form-control" id="inputemail" placeholder="E-mail">
-                <label for="inputadres">Adres</label>
-                <input type="adres" class="form-control" id="inputadres" placeholder="Adres">
-                <label for="inputwachtwoord">Wachtwoord</label>
-                <input type="wachtwoord" class="form-control" id="inputwachtwoord" placeholder="Wachtwoord">
-                <label for="inputwachtwoordbevestigen">Wachtwoord bevestigen</label>
-                <input type="wachtwoordbevestigen" class="form-control" id="inputwachtwoordbevestigen" placeholder="Wachtwoord bevestigen">
-                <button class="btn btn-dark">
-                        <a href="registreren.html">Registreren</a>
-                </button>
+        <div id="Account" data-children=".item">
+                <div class="item">
+                      <a data-toggle="collapse" data-parent="#Account" href="#Account1" role="button" aria-expanded="true" aria-controls="Account1">
+                            <h5> Heb je al een account bij Virtual Spectacles? </h5>
+                      </a>
+                      <div id="Account1" class="collapse" role="tabpanel">
+                        <div class="mb-3">
+
+                                <label for="inputemail">E-mail</label>
+                                <input type="email" class="form-control" id="inputemail" placeholder="E-mail">
+                                <label for="inputwachtwoord">Wachtwoord</label>
+                                <input type="wachtwoord" class="form-control" id="inputwachtwoord" placeholder="Wachtwoord">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="Check1">
+                                    <label class="form-check-label" for="Check1">Onthoud mij</label>
+                                </div>
+                
+                                <a class="btn knop" href="{{ site.baseurl }}/reserve_betalen.html" role="button">Inloggen</a>
+                
+                                <div id="Wachtwoord" data-children=".item">
+                                        <div class="item">
+                                          <a class="wachtwoord link" data-toggle="collapse" data-parent="#Wachtwoord" href="#Wachtwoord1" role="button" aria-expanded="true" aria-controls="Wachtwoord1">
+                                            Ik ben mijn wachtwoord vergeten? 
+                                          </a>
+                                          <div id="Wachtwoord1" class="collapse" role="tabpanel">
+                                            <p class="mb-3">
+                                                    <div>
+                                                            Vul hier het e-mailadres in:
+                                                            <input type="email" class="form-control" id="inputemail" placeholder="E-mail">
+                                                            <a class="btn knop" href="{{ site.baseurl }}/wachtwoord.html" role="button">Verstuur</a>
+                                                    </div>                                            
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                                        </div>
+                      </div>
+                </div>
             </div>
+    
+        </div>
+        <div class="col-md-6 col-12">
+            <div id="Nieuw" data-children=".item">
+                    <div class="item">
+                            <a data-toggle="collapse" data-parent="#Nieuw" href="#Nieuw1" role="button" aria-expanded="true" aria-controls="Nieuw1">
+                                    <h5>Nieuw bij Virtual spectacles?</h5>                            </a>
+                            <div id="Nieuw1" class="collapse" role="tabpanel">
+                            <p class="mb-3">
+                                    <div>
+                                            <p><b>Registreer als nieuwe klant:</b></p>
+                                            <label for="inputemail">E-mail</label>
+                                            <input type="email" class="form-control" id="inputemail" placeholder="E-mail">
+                                            <label for="inputadres">Adres</label>
+                                            <input type="adres" class="form-control" id="inputadres" placeholder="Adres">
+                                            <label for="inputwachtwoord">Wachtwoord</label>
+                                            <input type="wachtwoord" class="form-control" id="inputwachtwoord" placeholder="Wachtwoord">
+                                            <label for="inputwachtwoordbevestigen">Wachtwoord bevestigen</label>
+                                            <input type="wachtwoordbevestigen" class="form-control" id="inputwachtwoordbevestigen" placeholder="Wachtwoord bevestigen">
+                                            
+                                            <a class="btn knop" href="{{ site.baseurl }}/registreren.html" role="button">Registreren</a>
+                            
+                                        </div>                            </p>
+                            </div>
+                    </div>
+                </div>
         </div>
     </div>
 </div>

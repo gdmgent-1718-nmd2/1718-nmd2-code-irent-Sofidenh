@@ -1,4 +1,6 @@
-* {box-sizing: border-box;}
+* {box-sizing: border-box;
+  font-family: 'Mukta Malar', sans-serif;
+}
 ul {list-style-type: none;}
 
 .logo {
@@ -14,17 +16,35 @@ ul {list-style-type: none;}
 }
 
 .socialmedia {
-  margin-right: 15px;
+  padding-right: 15px;
 }
 
+.invulveld{
+  border: $blauw 1px solid !important;
+  border-radius: 20px !important;
+}
 
+// abonnement
+.broodkruimel{
+color: black !important;
+}
+// Inloggen
+.form-check{
+  margin-left:20px !important;
+}
+
+.wachtwoord{
+  color: black !important;
+}
+
+// carousel
 .carousel {
   margin-bottom: 100px;
 }
 
 .carousel-item {
   overflow: hidden;
-  height: 280px;
+  height: 200px;
   width: 500px;
 }
 
@@ -44,6 +64,8 @@ ul {list-style-type: none;}
   }
 }
 
+
+//   Index
 .fotokader {
   background: #DDD url("../../img/fotohome.jpg") no-repeat;
   background-size: cover;
@@ -56,22 +78,20 @@ ul {list-style-type: none;}
   margin-bottom: 30px;
 }
 
-.afbeelding{
+.afbeelding {
   padding:0px !important;
 }
 
-//   Index
 h2{
   color: $blauw !important;
   font-size: 25px !important;
   font-family: 'Ultra', serif !important;
-  margin-top: 30px !important;
+  margin-top: 20px !important;
 }
-.h3{
-  color: $blauw !important;
-  font-size: 35px !important;
-  font-family: 'Mukta Malar', sans-serif !important;
 
+h3{
+  font-size: 35px !important;
+  color: $blauw !important;
 }
 
 h4{
@@ -83,9 +103,10 @@ h4{
   padding-top: 120px;
 }
 
-.h5 {
-  font-size: 20pt;
-  color: #777;
+h5 {
+  font-size: 20pt !important;
+  color: black !important;
+  margin-top:10px !important;
 }
 
 .link{
@@ -95,6 +116,7 @@ h4{
 
 a{
   color:white !important;
+  text-decoration: none;
 }
 
 p{
@@ -111,14 +133,19 @@ p{
   width: 5px;
 }
 
-button{
+.knop{
   background-color: $blauw !important;
-  text-decoration: none;
-  
+  text-decoration: none !important; 
+  border: $blauw 2px solid !important;
+  margin-bottom: 20px;
+  border-radius: 20px !important;
+
+
+
     &:hover{
-      border: $blauw 2px solid;
+      border:$blauw 1px solid;
       background-color: white !important;
-      color: $blauw !important;
+      color:$blauw !important;
     }
 }
 
@@ -139,6 +166,19 @@ button{
     }
   }
 
+  @media screen and (max-width:766px){
+    .mobiel{
+      display:none;
+    }
+      
+  }
+  
+  @media only screen and (min-width: 768px){
+    .desktop{
+      display:none;
+    }
+  }
+
 
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
@@ -148,10 +188,11 @@ button{
   h4{
     font-size: 40px !important;
   }
-
-  body{
-    background-color: yellow !important;
-  } 
+  .carousel-item {
+    overflow: hidden;
+    height: 300px;
+    width: 500px;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -160,6 +201,12 @@ button{
     height:  500px;
     }
    
+    .carousel-item {
+      overflow: hidden;
+      height: 200px;
+      width: 500px;
+    }
+
     h4{
       font-size: 50px !important;
       padding-top: 220px;
@@ -168,10 +215,6 @@ button{
     h2{
       font-size: 30px !important;
     }
-
-  body{
-    background-color: green !important;
-  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -179,6 +222,12 @@ button{
   h4{
     font-size: 60px !important;
     padding-top: 240px;
+  }
+
+  .carousel-item {
+    overflow: hidden;
+    height: 300px;
+    width: 400px;
   }
 
   h2{
@@ -189,9 +238,6 @@ button{
     height:  600px;
     }
 
-  body{
-    background-color: red !important;
-  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -209,7 +255,4 @@ button{
     height:  700px;
     }
 
-  body{
-    background-color: blue !important;
-  }
 }

@@ -7,49 +7,74 @@ title: Betalen
 ---
 <div class="container">
     <div class="row">
-        <div class="col-md-6 col-12">
-            <h3>Betalen</h3>
-            <h6>Controleer uw gegevens!</h6>
-            <p>
-                Overzicht gegevens:
-            </p>
-            <p>
-                voornaam: <br>
-                achternaam: <br>
-                email: <br>
-                adres <br>
-                soort abonnement <br>
-            </p>
+        <div class="col-12">
+            <h2>Abonnementen</h2>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a class="broodkruimel" href="abonnement.html">formulier invullen</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">controleer gegevens</a></li>
+                      <li class="breadcrumb-item " aria-current="page">Betalen</a></li>
+                    </ol>
+                </nav>
         </div>
-        <div class="col-md-6 col-12">
-            <h6>Kies je betaalmethode:</h6>
-            <div>
-                <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                    Paypal
-                </label>
-            </div>
-            <div>
-                <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                    Bancontact
-                </label>
-            </div>
-            <div>
-                <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                    Visa
-                </label>
-            </div>
-            <div>
-                <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                    Mastercard
-                </label>
-            </div>
-            <button class="btn btn-dark">
-                    <a href="abo_bedank.html">Betalen</a>
-            </button>
-        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6 offset-md-5">
+            <h3>Controleer uw gegevens:</h3>
+            <p>
+                Voornaam: Jella<br>
+                Achternaam: Vanbroeck<br>
+                Telefoonnummer: 09 364 87 98 <br>
+                E-mailadres: jella.vanbroeck@gmail.com <br>
+                Adres:pepperstraat 63 9000 Gent <br>
+                Soort abonnement: Een 10 beuren kaart <br>
+                Opmerkingen: /
+            </p>
+            <a class="link" href="abonnement.html"> Gegevens wijzigen</a>
+        <br><br>
+        <p>
+                <a class="btn knop" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Bevestigen en betalen</a>
+        </p>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body">
+
+                            <div class="col-12">
+                                    <h3>Kies je betaalmethode:</h3>
+                                    <div>
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                            Paypal
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                            Bancontact
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                            Visa
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                            Mastercard
+                                        </label>
+                                    </div>
+                                </div>
+                                <br>
+                                <a class="btn knop" href="{{ site.baseurl }}/abo_bedank.html" role="button">Betalen</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+        
+    </div>
     </div>
 </div>

@@ -7,19 +7,19 @@ title: Mijn Account
 ---
 <div class="container">
     <div class="row">
-        <div class="col-md-6 col-12">
+        <div class="col-12">
             <h2>Mijn account</h2>
         </div>
-        <div class="col-md-6 col-12">
-                <h6>Naam: Jella Vanbroeck</h6>
+        <div class="col-12 col-md-6 offset-md-5">
+                <p><b>Naam: Jella Vanbroeck</b></p>
                 <label for="inputwachtwoord">Wachtwoord wijzigen</label>
-                <input type="wachtwoord" class="form-control" id="inputwachtwoord" placeholder="Nieuw wachtwoord">
-                <h6>Adres: pepperstraat 63 9000 Gent</h6>
+                <input type="wachtwoord" class="form-control invulveld" id="inputwachtwoord" placeholder="Nieuw wachtwoord">
+                <p><b>Adres: pepperstraat 63 9000 Gent</b></p>
                 <label for="inputadres">Adres wijzigen</label>
-                <input type="adres" class="form-control" id="inputadres" placeholder="Nieuw adres">
-                <button class="btn btn-dark">
-                        <a href="#">Wijzigen</a>
-                </button>
+                <input type="adres" class="form-control invulveld" id="inputadres" placeholder="Nieuw adres">
+        
+                <a class="btn knop" href="{{ site.baseurl }}/#.html" role="button">Wijzigen</a>
+
         </div>
     </div>
 </div>

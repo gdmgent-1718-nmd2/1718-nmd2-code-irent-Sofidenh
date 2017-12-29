@@ -7,57 +7,66 @@ title: Abonnementen
 ---
 <div class="container">
     <div class="row">
-        <div class="col-md-6 col-12">
+        <div class="col-12 col-md-6">
             <h2>Abonnementen</h2>
             <p>
-                    Nog meer unieke ervaringen voor minder geldt. 
+                  Nog meer unieke ervaringen voor minder geldt. 
                     Onze abonnementen zijn zonder vervaldatum. <br>
                     <br>
-                    Kies nu je abonnement en bespaar tot 300 euro!
+                    <strong>Kies nu je abonnement en bespaar tot 300 euro!</strong>
             </p>
-            <div>
-                <p>
-                    Een 5 beurtenkaart voor 225 euro 
+        </div>
+     </div>    
+     <div class="row"> 
+            <div class="col-md-6 col-12">
+                
+                    <h3>Een 5 beurtenkaart</h3>
+                    <h5>voor 225 euro </h5>
+                <p> 
                     van 250 euro naar 225<br>
-                    10% korting
+                    <b>10% korting</b>
                 </p>
+                
+                    <h3>Een 10 beurtenkaart </h3>
+                    <h5> voor 400 euro</h5> 
                 <p>
-                    Een 10 beurtenkaart voor 400 euro
-                    van 500 euro naar 400 <br>
-                    20% korting
+                    van 500 euro naar 400<br>
+                    <b>20% korting</b>
                 </p>
-                <p>
-                    Een 20 beurtenkaart voor 700 euro
-                    van 1000 naar 700 euro<br>
-                    30% korting
+              
+                    <h3>Een 20 beurtenkaart </h3>
+                   <h5> voor 700 euro</h5>
+                    <p>van 1000 naar 700 euro<br>
+                    <b>30% korting</b>
                 </p>
             </div>
-        </div>
+        
         <div class="col-md-6 col-12">
-            <h2>Formulier abonnement</h2>
+            <h3>Formulier abonnement</h3>
             <label for="inputvoornaam">Voornaam</label>
-            <input type="voornaam" class="form-control" id="inputvoornaam" placeholder="Voornaam">
+            <input type="voornaam" class="form-control invulveld" id="inputvoornaam" placeholder="Voornaam">
             <label for="inputachternaam">Achternaam</label>
-            <input type="achternaam" class="form-control" id="inputachternaam" placeholder="Achternaam">
+            <input type="achternaam" class="form-control invulveld" id="inputachternaam" placeholder="Achternaam">
             <label for="inputtelefoon">Telefoon</label>
-            <input type="telefoon" class="form-control" id="inputtelefoon" placeholder="Telefoon">
+            <input type="telefoon" class="form-control invulveld" id="inputtelefoon" placeholder="Telefoon">
             <label for="inputemail">E-mail</label>
-            <input type="email" class="form-control" id="inputemail" placeholder="E-mail">
+            <input type="email" class="form-control invulveld" id="inputemail" placeholder="E-mail">
             <label for="inputadres">Adres</label>
-            <input type="adres" class="form-control" id="inputadres" placeholder="Adres">
+            <input type="adres" class="form-control invulveld" id="inputadres" placeholder="Adres">
             <div class="form-group">
                     <label for="exampleFormControlSelect1">Keuze abonnement</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control invulveld" id="exampleFormControlSelect1">
                       <option>5 beurtenkaart</option>
                       <option>10 beurtenkaart</option>
                       <option>20 beurtenkaart</option>
                     </select>
-                  </div>
-            <label for="inputopmerking">Opmerkingen</label>
-            <input type="opmerking" class="form-control" id="inputopmerking" placeholder="Opmerkingen">
-            <button class="btn btn-dark">
-                    <a href="abo_betalen.html">Bevestigen en betalen</a>
-            </button>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Opmerkingen</label>
+                <textarea class="form-control invulveld" id="exampleFormControlTextarea1" placeholder="Opmerkingen" rows="3"></textarea>
+            </div>
+            <a class="btn knop" href="{{ site.baseurl }}/abo_betalen.html" role="button">Bevestigen en betalen</a>
+
         </div>
     </div>
 </div>
