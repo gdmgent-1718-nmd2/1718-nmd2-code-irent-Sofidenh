@@ -1,27 +1,24 @@
 .navigatie{
 background-color: $blauw;
 color: white;
+margin-bottom: 0px !important;
 }
 
 .titel{
     color: white;
     font-family: 'Ultra', serif;
-    
-    &:hover{
-        color: white;
-    }
+    font-size: 15px !important;
 }
 
-.hamburger{
-    color: white;
-    border: 1px solid white !important;
-}
-
-.icoon{
-        color: white;
-
-}
 
 .nav-item{
     color: white !important;
 }
+
+.navigation {
+    margin-bottom: 50px;
+  }
+  
+  .navbar-brand img {
+    margin-right: 3px;
+  }

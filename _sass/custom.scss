@@ -9,14 +9,6 @@ ul {list-style-type: none;}
   font-size: 5pt;
 }
 
-.navigation {
-  margin-bottom: 50px;
-}
-
-.navbar-brand img {
-  margin-right: 10px;
-}
-
 .footer p {
   margin-top: 35px;
 }
@@ -25,16 +17,6 @@ ul {list-style-type: none;}
   margin-right: 15px;
 }
 
-.btn {
-  margin: 25px 0px 25px;
-  width: 200px;
-}
-
-
-.footer {
-  margin-top: 100px;
-  color: #999;
-}
 
 .carousel {
   margin-bottom: 100px;
@@ -46,7 +28,7 @@ ul {list-style-type: none;}
   width: 500px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   .carousel {
     display: none; 
   }
@@ -54,11 +36,9 @@ ul {list-style-type: none;}
 
 .image {
   width: 100%;
-  max-width: 600px;
-  margin-bottom: 100px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 576px) {
   .image {
     display: none; 
   }
@@ -71,40 +51,36 @@ ul {list-style-type: none;}
   width: 100%;
   height:  300px;
   position: relative;
-  margin-top: -50px;
-  margin-bottom: 100px;
+  margin: 0px;
+  padding:0px;
+  margin-bottom: 30px;
 }
 
-.fotokader__title { 
-  margin: 0;
-  font-size: 3rem;
-  font-family: Lato, sans-serif;
-  font-weight: 400;
-  position:  absolute;
-  color: #FFF;
-  top: 37%;
-  left: 57%;
-  text-align: center;
-  transform:  translate(-50%,-50%);
-  z-index: 1;
-  text-shadow: 0 0 10px #333;
+.afbeelding{
+  padding:0px !important;
 }
 
 //   Index
-
 h2{
   color: $blauw !important;
-  font-size: 35px !important;
+  font-size: 25px !important;
+  font-family: 'Ultra', serif !important;
+  margin-top: 30px !important;
 }
 .h3{
   color: $blauw !important;
   font-size: 35px !important;
+  font-family: 'Mukta Malar', sans-serif !important;
+
 }
 
 h4{
   font-family: 'Ultra', serif !important;
   color: white !important;
-  font-size: 50px !important;
+  font-size: 35px !important;
+  color: white;
+  padding: 30px;
+  padding-top: 120px;
 }
 
 .h5 {
@@ -122,38 +98,118 @@ a{
 }
 
 p{
-  font-size: 14px !important;
-}
+  font-size: 16px !important;
+  font-family: 'Mukta Malar', sans-serif !important;
 
+}
+// Overons
+.logos_overons{
+  width: 30px;
+}
 
 .logo{
   width: 5px;
 }
 
-.button{
+button{
   background-color: $blauw !important;
-
-}
-/* Add media queries for smaller screens */
-@media screen and (max-width:720px) {
-}
-
-@media screen and (max-width: 420px) {
-}
-
-@media screen and (max-width: 290px) {
+  text-decoration: none;
+  
+    &:hover{
+      border: $blauw 2px solid;
+      background-color: white !important;
+      color: $blauw !important;
+    }
 }
 
-.form-control {
-  margin-bottom: 20px;
+  .form-control {
+    margin-bottom: 20px;
+  }
+  
+  @media screen and (max-width:766px){
+    .vragen{
+      display:none;
+    }
+      
+  }
+  
+  @media only screen and (min-width: 768px){
+    .vragen-mobile{
+      display:none;
+    }
+  }
+
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+  h4{
+    font-size: 40px !important;
+  }
+
+  body{
+    background-color: yellow !important;
+  } 
 }
 
-@media screen and (max-width:766px){
-  .vragen{display:none}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+  .fotokader {
+    height:  500px;
+    }
+   
+    h4{
+      font-size: 50px !important;
+      padding-top: 220px;
+    }
+
+    h2{
+      font-size: 30px !important;
+    }
+
+  body{
+    background-color: green !important;
+  }
 }
 
-@media only screen and (min-width: 768px){
-  .vragen-mobile{
-    display:none;
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  
+  h4{
+    font-size: 60px !important;
+    padding-top: 240px;
+  }
+
+  h2{
+    font-size: 40px !important;
+  }
+
+  .fotokader {
+    height:  600px;
+    }
+
+  body{
+    background-color: red !important;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+  h4{
+    font-size: 70px !important;
+    padding-top: 300px;
+  }
+
+  h2{
+    font-size: 45px !important;
+  }
+
+  .fotokader {
+    height:  700px;
+    }
+
+  body{
+    background-color: blue !important;
   }
 }
